@@ -54,7 +54,7 @@ public class UserDaoJDBCImpl implements UserDao {
     }
 
     @Override
-    public List<User> removeUserById(long id) {
+    public void removeUserById(long id) {
         String sql = "DELETE FROM USER WHERE id = ?";
         try(Connection connection = Util.getConnection();
             PreparedStatement prepareStatement = connection.prepareStatement(sql)) {
@@ -63,7 +63,6 @@ public class UserDaoJDBCImpl implements UserDao {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return null;
     }
 
     @Override
