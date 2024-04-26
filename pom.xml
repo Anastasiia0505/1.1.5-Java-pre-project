@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>Task JDBC</artifactId>
+    <artifactId>TaskJDBC</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
@@ -47,7 +47,6 @@
             <artifactId>hibernate-core</artifactId>
             <version>5.6.3.Final</version>
         </dependency>
-
     </dependencies>
 
 </project>
